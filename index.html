@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Rubik+Doodle+Shadow&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+    <div class="container card">
+        <h1 class="font-rubik">Pick your weapon!🥁</h1>
+
+        <div class="board font-quicksand">
+            <div id="your-div">
+                <h3>You</h3>
+                <div class="gestures-box">
+                    <img class="gesture" src="images/q-mark.svg">
+                </div>
+                <h2 class="your-score font-rubik">0</h2>
+            </div>
+            <div id="comp-div">
+                <h3>Computer</h3>
+                <div class="gestures-box">
+                    <img class="gesture" src="images/q-mark.svg">
+                </div>
+                <h2 class="comp-score font-rubik">0</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+            <!-- when its not picking time disable the buttons (maybe reduce opacity?) -->
+                <button id="rock-btn" class="btn gesture-btn"  name="rock"><img class="gesture-pick"
+                        src="images/rock.svg"></button>
+                <button id="paper-btn" class="btn gesture-btn"  name="paper"><img class="gesture-pick"
+                        src="images/paper.svg"></button>
+                <button id="scissors-btn" class="btn gesture-btn"  name="scissors"><img class="gesture-pick"
+                        src="images/scissors.svg"></button>
+            </div>
+            <a class="btn reset-btn"><img src="images/reset.png"></button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

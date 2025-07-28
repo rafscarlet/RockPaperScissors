@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(270deg, #48c2c6, #b7e856);
+    background: linear-gradient(-45deg, #48c2c6, #b7e856);
     /* background-color: darksalmon; */
     display: flex;
     flex-direction: column;
@@ -133,7 +133,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 90vh;
 }
 
 .hand-svgs {
@@ -176,4 +176,69 @@ h1 {
 
     text-align: center;
     font-size: 30px;
+}
+
+
+
+@media (max-width:768px) {
+
+    body {
+        background-size: 200% 200%;
+        animation: none;
+        align-items: center;
+        margin: 0px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+    
+    .gestures-box {
+        width: inherit;
+        height: 30vh;
+    }
+
+    .gesture {
+        width: 50%;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .card {
+        width: 80%;
+        height: 95vh;
+        margin: 0px;
+    }
+
+    .board {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    #your-div, #comp-div {
+        width: fit-content;
+    }
+
+    .gesture-pick {
+        width:4.5rem;
+        padding: 0px;
+    }
+
+    .reset-btn img{
+        width: 75px;
+    }
+}
+
+
+@media (max-width:1921px) {
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .board {
+        font-size: 25px
+    }
 }

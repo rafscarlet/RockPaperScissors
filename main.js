@@ -34,7 +34,8 @@ $(".reset-btn").on("click", function(){
     round = 0;
     $(".your-score").text(playerScore);
     $(".comp-score").text(computerScore);
-    restart()
+    restart();
+    $("h1").text(`Pick your weapon!🥁`);
 });
 
 
